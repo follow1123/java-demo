@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+hikari.properties
+tomcat.8081
