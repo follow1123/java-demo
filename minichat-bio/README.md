@@ -125,9 +125,9 @@ classDiagram
     <<Interface>> Border
     class RoundedBorder{ }
     class AngleBorder{ }
-    link Border "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/java/org/example/minichat/core/ui/Border.java"
-    link RoundedBorder "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/java/org/example/minichat/core/ui/RoundedBorder.java"
-    link AngleBorder "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/java/org/example/minichat/core/ui/AngleBorder.java"
+    link Border "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/core/ui/Border.java"
+    link RoundedBorder "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/core/ui/RoundedBorder.java"
+    link AngleBorder "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/core/ui/AngleBorder.java"
 
     RoundedBorder ..|> Border
     AngleBorder ..|> Border
@@ -144,8 +144,8 @@ classDiagram
         + setCols(int cols) void
         + setRows(int rows) void
     }
-    link View "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/core/ui/View.java"
-    link TextView "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/core/ui/TextView.java"
+    link View "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/core/ui/View.java"
+    link TextView "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/core/ui/TextView.java"
 
     TextView ..|> View
     TextView *-- Border
@@ -171,9 +171,9 @@ classDiagram
     class UILauncher{
         + start() void
     }
-    link View "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/core/ui/View.java"
-    link ViewRegistrar "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/core/ui/ViewRegistrar.java"
-    link UILauncher "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/core/ui/UILauncher.java"
+    link View "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/core/ui/View.java"
+    link ViewRegistrar "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/core/ui/ViewRegistrar.java"
+    link UILauncher "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/core/ui/UILauncher.java"
 
     ViewRegistrar *-- View
     UILauncher *-- ViewRegistrar
@@ -196,10 +196,10 @@ classDiagram
     class LoginView{ }
     class ContactView{ }
     class ChatView{ }
-    link TextView "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/core/ui/TextView.java"
-    link LoginView "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/view/LoginView.java"
-    link ContactView "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/view/ContactView.java"
-    link ChatView "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/view/ChatView.java"
+    link TextView "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/core/ui/TextView.java"
+    link LoginView "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/view/LoginView.java"
+    link ContactView "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/view/ContactView.java"
+    link ChatView "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/view/ChatView.java"
 
     TextView <|-- LoginView
     TextView <|-- ContactView
@@ -293,7 +293,7 @@ classDiagram
 
 ### Service
 
-> [UserService](https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/service/UserService.java)
+> [UserService](https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/service/UserService.java)
 
 处理用户相关业务逻辑
 
@@ -310,9 +310,9 @@ classDiagram
     }
     class UserModel{ }
     class FileModel{ }
-    link PropsModel "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/model/PropsModel.java"
-    link UserModel "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/model/UserModel.java"
-    link FileModel "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/model/FileModel.java"
+    link PropsModel "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/model/PropsModel.java"
+    link UserModel "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/model/UserModel.java"
+    link FileModel "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/model/FileModel.java"
 
     PropsModel <|-- UserModel
     PropsModel <|-- FileModel
@@ -344,7 +344,7 @@ block-beta
     eom:1
 ```
 
-使用字符串组成，定义在 [Message](https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/core/Message.java)
+使用字符串组成，定义在 [Message](https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/core/Message.java)
 
 使用 `&` 符号分割
 
@@ -353,7 +353,7 @@ block-beta
 - `token` - 判断用户使用登录
 - `serialNum` - 由于消息的发送和接收都是异步的，使用这个字段确定是响应到哪个消息
 - `msgType` -
-  定义消息类型，业务相关，详细类型定义在 [MsgType](https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/core/MsgType.java)
+  定义消息类型，业务相关，详细类型定义在 [MsgType](https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/core/MsgType.java)
 - `body` - 消息体
 - `eom` - 消息结束符，就是字符串`eom`，End of Message的缩写
 
@@ -361,7 +361,7 @@ block-beta
 
 定义消息发送和接收逻辑
 
-具体发送解析消息逻辑定义在 [MsgUtil](https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/utils/MsgUtil.java)
+具体发送解析消息逻辑定义在 [MsgUtil](https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/utils/MsgUtil.java)
 
 ```mermaid
 classDiagram
@@ -379,7 +379,7 @@ classDiagram
         - handleWrite() void
         + disconnect() void
     }
-    link MsgBus "https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/core/MsgBus.java"
+    link MsgBus "https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/core/MsgBus.java"
 ```
 
 ###### 初始化
@@ -447,13 +447,13 @@ e --> a
 
 #### 客户端
 
-> [Client](https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/core/Client.java)
+> [Client](https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/core/Client.java)
 
 连接客户端后将 Socket 传递给 MsgBus，并启动 UI
 
 #### 服务端
 
-> [Server](https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/core/Server.java)
+> [Server](https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/core/Server.java)
 
 ```mermaid
 flowchart TD
@@ -461,24 +461,24 @@ a(serverSocket.accept) --> b(new UserSocket)
 b --> a
 ```
 
-[UserSocket](https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/core/UserSocket.java)
+[UserSocket](https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/core/UserSocket.java)
 是每个客户端的实例，配合 [UserService](#service) 和 [MsgBus](#消息总线) 处理客户端请求
 
 ### 其他
 
 #### 工具类
 
-- [MsgUtil](https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/utils/MsgUtil.java) -
+- [MsgUtil](https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/utils/MsgUtil.java) -
   编解码消息并发送或接收
-- [RandomUtil](https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/utils/RandomUtil.java) -
+- [RandomUtil](https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/utils/RandomUtil.java) -
   生成 token 或 serialNum
-- [SocketUtil](https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/utils/SocketUtil.java) -
+- [SocketUtil](https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/utils/SocketUtil.java) -
   判断 Socket 状态
-- [StrUtil](https://github.com/follow1123/java-demo/blob/main/mini-chat/src/main/org/example/minichat/utils/StrUtil.java) -
+- [StrUtil](https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/main/java/org/example/minichat/utils/StrUtil.java) -
   处理字符串
 
 #### 测试
 
 由于是 demo 项目，所以测试文件直接放在项目目录下，方便测试
 
-> [代码](https://github.com/follow1123/java-demo/blob/main/mini-chat/src/test/org/example/minichat/tests)
+> [代码](https://github.com/follow1123/java-demo/tree/main/minichat-bio/src/test/java/org/example/minichat)
